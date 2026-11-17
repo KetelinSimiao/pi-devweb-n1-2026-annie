@@ -1,160 +1,409 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> Medelin | Art </title>
+
+    <title>Medelin | Art Gesso</title>
+
+    <meta name="description" content="Conheça as peças artesanais de arte sacra da Medelin Art Gesso. Solicite sua peça personalizada.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Great+Vibes&family=Lato:wght@400;500;700&display=swap" rel="stylesheet">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
     <link rel="stylesheet" href="./CSS/style.css">
-    
 </head>
+
 <body>
-     <header> 
-      <div class="logo"> <h1>  Medelin </h1>
-    <p> Arte em Gesso </p>
-      </div>
 
-      <input type="search" id="busca" placeholder="Buscar…">
+    <a href="#conteudo-principal" class="pular-conteudo">
+        Pular para o conteúdo
+    </a>
 
-    <nav>
-        <ul>
-            <li>  <a href="#inicio">  Início </a> </li>
-            <li> <a href="#Imagens" > Imagens </a> </li>
-            <li> <a href="#sobrenos"> Sobre Nós </a></li>
-            <li><a href="#contato"> Contato  </a></li>
-        </ul>
-    </nav>
-</header>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top" aria-label="Navegação principal">
+            <div class="container">
+
+                <a class="navbar-brand" href="#inicio" aria-label="Medelin Ateliê - Página inicial">
+                    Medelin
+                    <span>Ateliê</span>
+                </a>
+
+                <button class="navbar-toggler" type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#menuMedelin"
+                    aria-controls="menuMedelin"
+                    aria-expanded="false"
+                    aria-label="Abrir ou fechar menu de navegação">
+
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="menuMedelin">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#inicio">Início</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#colecoes">Coleções</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeria.html">Galeria</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#personalizados">Personalizados</a>
+                        </li>
+
+                        <li class="nav-item ms-lg-3">
+    <button
+        class="btn btn-outline-secondary"
+        id="btnTema"
+        type="button"
+        aria-label="Ativar modo escuro"
+        aria-pressed="false">
+        <i class="bi bi-moon" aria-hidden="true"></i>
+    </button>
+</li>
 
 
-<!--  carrossel  inicial  -->
- 
 
-<section class="banner">
+                        <li class="nav-item ms-lg-3">
+                            <button class="btn btn-outline-secondary" id="btnCarrinho" type="button" aria-label="Carrinho de compras">
+                                <i class="bi bi-bag" aria-hidden="true"></i>
+                                <span id="contadorCarrinho" aria-live="polite" aria-atomic="true">0</span>
+                            </button>
+                        </li>
 
-    <div id="carouselMedelin" class="carousel slide" data-bs-ride="carousel">
+                    </ul>
 
-        <div class="carousel-inner">
+                </div>
+            </div>
+        </nav>
+    </header>
 
-            <div class="carousel-item active">
-                <img src="./img/nossasenhora.png.png" class="d-block w-100" alt="Arte sacra Medelin">
+    <main id="conteudo-principal">
+
+        <section id="inicio" aria-label="Apresentação da Medelin">
+
+            <h1 class="visually-hidden">Medelin Ateliê: arte sacra em gesso</h1>
+
+            <div id="carouselMedelin" class="carousel slide" aria-label="Galeria de imagens da Medelin">
+
+                <div class="carousel-inner">
+
+                    <div class="carousel-item active">
+                        <img src="./imagens/meusnenos.jpg"
+                            class="d-block w-100"
+                            alt="Peças artesanais de arte sacra produzidas pela Medelin">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagens/meusnenos.jpg"
+                            class="d-block w-100"
+                            alt="Detalhes das esculturas religiosas da Medelin">
+                    </div>
+
+                    <div class="carousel-item">
+                        <img src="./imagens/meusnenos.jpg"
+                            class="d-block w-100"
+                            alt="Trabalho artesanal em gesso da Medelin">
+                    </div>
+
+                </div>
+
+                <button class="carousel-control-prev" type="button"
+                    data-bs-target="#carouselMedelin"
+                    data-bs-slide="prev"
+                    aria-label="Mostrar imagem anterior">
+
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                </button>
+
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselMedelin"
+                    data-bs-slide="next"
+                    aria-label="Mostrar próxima imagem">
+
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                </button>
+
             </div>
 
-            <div class="carousel-item">
-                <img src="./img/nossasenhora.png" class="d-block w-100" alt="Peças religiosas Medelin">
+        </section>
+
+        <section id="colecoes" class="colecoes" aria-labelledby="titulo-colecoes">
+
+            <div class="container">
+
+                <div class="titulo-colecoes">
+                    <span>Conheça nosso trabalho</span>
+
+                    <h2 id="titulo-colecoes">Nossas Coleções</h2>
+
+                    <p>
+                        Encontre peças especiais produzidas
+                        com cuidado e dedicação.
+                    </p>
+                </div>
+
+                <div class="lista-colecoes">
+
+                    <article class="card-colecao">
+                        <img src="./imagens/meusnenos.jpg" alt="Coleção de imagens sacras artesanais">
+
+                        <h3>Imagens Sacras</h3>
+
+                        <a href="galeria.html" class="btn-colecao">
+                            Conheça as peças
+                        </a>
+                    </article>
+
+                    <article class="card-colecao">
+                        <img src="./imagens/meusnenos.jpg" alt="Coleção de imagens de Nossa Senhora">
+
+                        <h3>Nossa Senhora</h3>
+
+                        <a href="galeria.html" class="btn-colecao">
+                            Conheça as peças
+                        </a>
+                    </article>
+
+                    <article class="card-colecao">
+                        <img src="./imagens/meusnenos.jpg" alt="Coleção de imagens religiosas de anjos">
+
+                        <h3>Anjos</h3>
+
+                        <a href="galeria.html" class="btn-colecao">
+                            Conheça as peças
+                        </a>
+                    </article>
+
+                    <article class="card-colecao">
+                        <img src="./imagens/meusnenos.jpg" alt="Coleção de peças religiosas especiais">
+
+                        <h3>Peças Especiais</h3>
+
+                        <a href="galeria.html" class="btn-colecao">
+                            Conheça as peças
+                        </a>
+                    </article>
+
+                </div>
+
             </div>
 
-            <div class="carousel-item">
-                <img src="./img/nossasenhora.png" class="d-block w-100" alt="Produção artesanal Medelin">
+        </section>
+
+        <section id="personalizados" class="personalizados" aria-labelledby="titulo-personalizados">
+
+            <div class="container">
+
+                <div class="titulo-personalizados">
+                    <span>Um pedido especial</span>
+
+                    <h2 id="titulo-personalizados">Solicite sua peça personalizada</h2>
+
+                    <p>
+                        Conte para nós como você imagina sua peça.
+                        Será um prazer ajudar a transformar sua ideia em arte.
+                    </p>
+                </div>
+
+                <form id="formPersonalizado" aria-describedby="ajuda-formulario">
+
+                    <div class="campo-formulario">
+                        <label for="nome">Nome completo</label>
+                        <input
+                            type="text"
+                            id="nome"
+                            name="nome"
+                            placeholder="Digite seu nome"
+                            autocomplete="name"
+                            required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="whatsapp">WhatsApp</label>
+                        <input
+                            type="tel"
+                            id="whatsapp"
+                            name="whatsapp"
+                            placeholder="(00) 00000-0000"
+                            autocomplete="tel"
+                            inputmode="tel"
+                            required>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="tipoPeca">Qual peça você deseja?</label>
+
+                        <select id="tipoPeca" name="tipoPeca" required>
+                            <option value="" selected disabled>
+                                Selecione uma opção
+                            </option>
+                            <option value="Nossa Senhora">Nossa Senhora</option>
+                            <option value="Santos">Santos</option>
+                            <option value="Anjos">Anjos</option>
+                            <option value="Outra peça religiosa">Outra peça religiosa</option>
+                        </select>
+                    </div>
+
+                    <div class="campo-formulario">
+                        <label for="descricao">Conte como imagina sua peça</label>
+                        <textarea
+                            id="descricao"
+                            name="descricao"
+                            rows="5"
+                            placeholder="Descreva os detalhes, tamanho, cores ou outras características..."
+                            required></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-personalizado">
+                        Solicitar orçamento
+                    </button>
+
+                    <p class="aviso-formulario" id="ajuda-formulario">
+                        Todos os campos são obrigatórios.
+                    </p>
+
+                </form>
+
+            </div>
+
+        </section>
+
+        <section class="depoimentos" id="depoimentos" aria-labelledby="titulo-depoimentos">
+
+            <div class="container">
+
+                <div class="titulo-depoimentos">
+                    <span>Carinho em cada detalhe</span>
+
+                    <h2 id="titulo-depoimentos">O que dizem nossos clientes</h2>
+
+                    <p>
+                        A satisfação de quem recebe nossas peças
+                        é a nossa maior inspiração.
+                    </p>
+                </div>
+
+                <div class="lista-depoimentos">
+
+                    <article class="card-depoimento">
+                        <div class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "A peça ficou maravilhosa! É possível perceber
+                            todo o cuidado e carinho em cada detalhe."
+                        </p>
+
+                        <h3>Maria S.</h3>
+                        <span>Cliente Medelin</span>
+                    </article>
+
+                    <article class="card-depoimento">
+                        <div class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Fiquei encantada com o acabamento.
+                            Um trabalho lindo e muito especial!"
+                        </p>
+
+                        <h3>Ana C.</h3>
+                        <span>Cliente Medelin</span>
+                    </article>
+
+                    <article class="card-depoimento">
+                        <div class="estrelas" role="img" aria-label="5 de 5 estrelas">
+                            ★★★★★
+                        </div>
+
+                        <p>
+                            "Atendimento atencioso e uma peça feita
+                            com muito capricho. Recomendo!"
+                        </p>
+
+                        <h3>Juliana R.</h3>
+                        <span>Cliente Medelin</span>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-conteudo">
+
+                <div class="footer-marca">
+                    <h2>Medelin</h2>
+                    <span>Ateliê</span>
+
+                    <img src="./imagens/logo.png" alt="Logo da Medelin Art Gesso">
+
+                    <p>
+                        Arte sacra produzida com cuidado,
+                        dedicação e carinho em cada detalhe.
+                    </p>
+                </div>
+
+                <nav class="footer-links" aria-label="Navegação do rodapé">
+                    <h3>Navegação</h3>
+
+                    <a href="#inicio">Início</a>
+                    <a href="#colecoes">Nossas Coleções</a>
+                    <a href="galeria.html">Galeria</a>
+                    <a href="#personalizados">Personalizados</a>
+                </nav>
+
+                <div class="footer-contato">
+                    <h3>Vamos conversar?</h3>
+
+                    <p>
+                        Tem uma ideia especial?
+                        Entre em contato e solicite seu orçamento.
+                    </p>
+
+                    <a href="#personalizados" class="btn-footer">
+                        Solicitar orçamento
+                    </a>
+                </div>
+
+            </div>
+
+            <div class="footer-final">
+                <p>© Medelin Art Gesso. Todos os direitos reservados.</p>
             </div>
 
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
-    </div>
-  
-</section>
 
+    </footer>
 
-
-<!--  amostra do sobre    -->
-<section class="sobre">
-
-    <div class="container">
-
-        <h2> Conheça a Medelin</h2>
-
-        <p>
-            Por trás de cada peça, existe uma história
-            de dedicação, fé e arte.
-        </p>
-
-        <div class="cards-sobre">
-
-            <div class="card-historia">
-               <img src="./img/" alt="">
-            </div>
-
-            <div class="card-producao">
-                <video>      </video>
-            </div>
-             <a href=""></a>   botao
-        </div>
-
-    </div>
-
-</section>
-
-
-
-  <!--  seção so do coleção - colocar botão para ir para galeria -->
-<section class="colecoes" data-bs-ride="carousel">
-
-    <div class="container">
-
-        <h2>Nossas Coleções</h2>
-
-        <p>
-            Conheça algumas das nossas peças
-            produzidas com arte e dedicação.
-        </p>
-
-        <div class="cards-colecoes">
-
-            
-            <div class="card-colecao">
-                <img src="img/colecoes/imagens-sacras.jpg"
-                     alt="Imagem sacra">
-
-                <h3>Imagens Sacras</h3>
-
-                <p>Peças religiosas com riqueza de detalhes.</p>
-
-                <a href="colecoes.html">Ver coleção</a>
-            </div>
-
-            
-            <div class="card-colecao">
-                <img src="img/colecoes/santos.jpg"
-                     alt="Imagens de santos">
-
-                <h3> Nossa senhora </h3>
-
-                <p>Arte sacra feita com cuidado artesanal.</p>
-
-                <a href="colecoes.html">Ver coleção</a>
-            </div>
-
-           
-            <div class="card-colecao">
-                <img src="img/colecoes/anjos.jpg"
-                     alt="Esculturas de anjos">
-
-                <h3>Anjo</h3>
-
-                <p> Peças delicadas e cheias de significado. </p>
-
-                <a href="colecoes.html">Ver coleção</a>
-            </div>
-
-          
-            <div class="card-colecao">
-                <img src="img/colecoes/especiais.jpg"
-                     alt="Peças religiosas especiais">
-
-                <h3> Peças especiais </h3>
-
-                <p> Conheça outras criações da Medelin.</p>
-
-                <a href="colecoes.html">Ver coleção</a>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
+
 </html>

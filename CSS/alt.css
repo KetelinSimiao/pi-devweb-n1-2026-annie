@@ -1,0 +1,332 @@
+.navbar {
+    padding: 18px 0;
+    background-color: var(--branco);
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+    display: flex;
+    flex-direction: column;
+    color: #A95775 !important;
+    font-family: var(--fonte-logo);
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.navbar-brand span {
+    font-family: var(--fonte-texto);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    margin-top: 5px;
+}
+
+.nav-link {
+    position: relative;
+    display: inline-block;
+    color: var(--texto);
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--rosa-secundario);
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--dourado);
+    transition: width 0.4s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.navbar-toggler {
+    border-color: var(--rosa-borda);
+}
+
+.navbar-toggler:focus-visible,
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 3px rgba(117, 70, 90, 0.35);
+}
+
+#btnCarrinho {
+    border-color: var(--rosa-secundario);
+    color: var(--rosa-secundario);
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+#btnCarrinho:hover {
+    background-color: var(--rosa-secundario);
+    color: var(--branco);
+}
+
+#contadorCarrinho {
+    margin-left: 4px;
+    font-weight: 700;
+}
+
+#inicio {
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.footer {
+    padding: 55px 0 20px;
+    background-color: var(--rosa-escuro);
+    color: var(--branco);
+}
+
+.footer-conteudo {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 40px;
+    padding-bottom: 35px;
+}
+
+.footer-marca h2 {
+    color: var(--branco);
+    font-family: var(--fonte-logo);
+    font-size: 40px;
+    font-weight: 400;
+    letter-spacing: 0;
+    margin-bottom: 0;
+}
+
+.footer-marca span {
+    display: block;
+    color: var(--dourado);
+    font-family: var(--fonte-texto);
+    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.footer-marca img {
+    display: block;
+    width: 140px;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 15px 0;
+}
+
+.footer-marca p,
+.footer-contato p {
+    max-width: 280px;
+    margin-top: 18px;
+    color: #F0DFE5;
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.footer-links,
+.footer-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.footer-links h3,
+.footer-contato h3 {
+    color: var(--branco);
+    font-size: 1.1rem;
+    margin-bottom: 18px;
+}
+
+.footer-links a {
+    color: #F0DFE5;
+    font-size: 15px;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--dourado);
+}
+
+.btn-footer {
+    display: inline-block;
+    padding: 11px 20px;
+    background-color: var(--rosa-principal);
+    color: var(--branco);
+    border-radius: 25px;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.btn-footer:hover {
+    background-color: var(--dourado);
+    color: var(--rosa-escuro);
+    transform: translateY(-3px);
+}
+
+.footer-final {
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    text-align: center;
+}
+
+.footer-final p {
+    color: #F0DFE5;
+    font-size: 13px;
+    margin: 0;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+    outline: 3px solid #75465A;
+    outline-offset: 4px;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible),
+input:focus:not(:focus-visible),
+select:focus:not(:focus-visible),
+textarea:focus:not(:focus-visible) {
+    outline: none;
+}
+
+@media (max-width: 991px) {
+    #carouselMedelin .carousel-item {
+        height: 420px;
+    }
+
+    .lista-colecoes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .lista-depoimentos {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-conteudo {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .footer-contato {
+        grid-column: 1 / -1;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar {
+        padding: 12px 0;
+    }
+
+    .navbar-nav {
+        padding-top: 12px;
+    }
+
+    .nav-link {
+        display: block;
+        width: fit-content;
+        margin-left: 0;
+        padding: 8px 0;
+    }
+
+    #carouselMedelin .carousel-item {
+        height: 320px;
+    }
+
+    .colecoes,
+    .personalizados,
+    .depoimentos {
+        padding: 45px 0;
+    }
+
+    .titulo-colecoes h2,
+    .titulo-personalizados h2,
+    .titulo-depoimentos h2 {
+        font-size: 1.5rem;
+    }
+
+    #formPersonalizado {
+        padding: 24px;
+        gap: 16px;
+    }
+
+    .lista-depoimentos {
+        grid-template-columns: 1fr;
+        max-width: 480px;
+        margin: 0 auto;
+    }
+
+    .footer-conteudo {
+        grid-template-columns: 1fr;
+        gap: 28px;
+    }
+
+    .footer-contato {
+        grid-column: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    #carouselMedelin .carousel-item {
+        height: 250px;
+    }
+
+    .lista-colecoes {
+        grid-template-columns: 1fr;
+    }
+
+    .card-colecao {
+        width: 100%;
+        max-width: 380px;
+        margin: 0 auto;
+    }
+
+    .card-colecao img {
+        height: 220px;
+    }
+
+    #formPersonalizado {
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
+
+    .campo-formulario:nth-child(n+3) {
+        grid-column: 1;
+    }
+
+    .btn-personalizado {
+        width: 100%;
+        justify-self: stretch;
+    }
+
+    .footer {
+        padding: 40px 0 20px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

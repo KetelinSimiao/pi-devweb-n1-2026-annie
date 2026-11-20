@@ -1,4 +1,30 @@
-.biografia-1 {
+.biografia {
     
+    font-family: 'Lato';
+    src: url('../fontes/Lato-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    color: rgba(117, 70, 90, 0.85);
+
+
+}
+
+.frase-de-efeito {
+    margin-left: 120px;
+    color: #C6A15B;
+}
+
+.titulo-sobre {
+   color:  #60434E;
+   margin-left: 50px;
+}
+
+.descricao-producao {
+    
+     font-family: 'Lato';
+    src: url('../fontes/Lato-Bold.ttf') format('truetype');
+    font-weight: 600;
+    font-display: swap;
+    color: rgba(117, 70, 90, 0.85);
 }
 

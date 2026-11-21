@@ -1,3 +1,18 @@
+
+
+.titulo-sobre {
+   color:  #60434E;
+   margin-left: 50px;
+}
+
+
+.frase-de-efeito {
+    margin-left: 120px;
+    color: #C6A15B;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
 .biografia {
     
     font-family: 'Lato';
@@ -5,18 +20,27 @@
     font-weight: 600;
     font-display: swap;
     color: rgba(117, 70, 90, 0.85);
-
-
+display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 50px;
+    display: flex;
 }
 
-.frase-de-efeito {
-    margin-left: 120px;
-    color: #C6A15B;
+.descricao-biografia {
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-.titulo-sobre {
-   color:  #60434E;
-   margin-left: 50px;
+.depoimento {
+    margin-left: 50px;
+    margin-bottom: 50px;
+    
+}
+
+.titulo-producao {
+    margin-left: 50px;
+    color: #60434E;
 }
 
 .descricao-producao {
@@ -26,5 +50,12 @@
     font-weight: 600;
     font-display: swap;
     color: rgba(117, 70, 90, 0.85);
+    margin-left: 50px;
 }
+
+.video-producao {
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+
 

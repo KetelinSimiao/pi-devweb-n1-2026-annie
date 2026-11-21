@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+
+  .segunda-parte{
+text-align: center;
+padding: 40px; 
+
+
+    }
+.cards {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card-colecao {
+    background-color: var(--branco);
+    border-radius: 20px;
+    padding: 20px;
+}
